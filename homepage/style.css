@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #efe8ee;
+  margin: 0;
+}
+
+header {
+  background: #3781f1;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 15px;
+}
+
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 20px;
+}
+
+input, button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+button {
+  background: #3781f1;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: gray;
+}
+
+.slot {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slot.booked {
+  background: #ddd;
+  cursor: not-allowed;
+}
+
+.slot.selected {
+  background: #3781f1;
+  color: white;
+}
+
+.admin {
+  background: white;
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  h3 {
+    font-size: 18px;
+  }
+}
