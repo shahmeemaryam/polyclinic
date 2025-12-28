@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinic Appointment Booking</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<header>
+  <h2>PolyClinic Orthopaedic Appointment </h2>
+</header>
+
+
+<div class="container">
+  <h3>Patient Details</h3>
+  <input id="name" placeholder="Patient Name" />
+  <input id="phone" placeholder="+94XXXXXXXXX" />
+  
+  
+
+  
+
+  <button id="sendOtpBtn" disabled>Send OTP</button>
+
+  <div id="otpSection" class="hidden">
+    <input id="otp" placeholder="Enter OTP" />
+    <button id="confirmBtn">Confirm Booking</button>
+  </div>
+
+  <p id="message"></p>
+
+  <div class="admin">
+    <h3>Admin View (Clinic)</h3>
+    <button id="refreshAdmin">Refresh Appointments</button>
+    <div id="adminList"></div>
+  </div>
+
+  <div id="recaptcha-container"></div>
+
+</div>
+
+<script type="module" src="firebase.js"defer></script>
+<script src="script.js"defer></script>
+<script src="sw.js"defer></script>
+</body>
+</html>
